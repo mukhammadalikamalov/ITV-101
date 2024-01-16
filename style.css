@@ -120,10 +120,56 @@ header {
 
 .swiper-block-bg {
   background-image: url("https://files.itv.uz/uploads/helper/2023/12/01//66bd676a671453fda1d0d3350bda1ac2-q-1920x750.jpeg");
-  background-color: #cccccc;
-  height: 600px;
+  height: 700px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  top: -30px;
+}
+
+.blog-bg-img {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 50%;
+  left: 13.6%;
+}
+
+.blog-bg-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.btn-bg {
+  background-color: #52b038;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+}
+
+.swiper-block-bg-2 {
+  background-image: url("https://files.itv.uz/uploads/helper/2023/11/27//7b641db7c21f6894e882d523ffbe66d7-q-1920x750.jpeg");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -30px;
+}
+
+.swiper-block-bg-3 {
+  background-image: url("https://files.itv.uz/uploads/helper/2023/10/12//b7b17356a6e79028208aa386805d4bba-q-1920x750.jpeg");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -30px;
 }

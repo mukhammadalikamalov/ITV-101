@@ -13,6 +13,7 @@ header {
   background-color: #1d1f1e;
   width: 100%;
   position: fixed;
+  z-index: 5;
 }
 
 .wrapper-header {
@@ -182,4 +183,13 @@ header {
   background-size: cover;
   position: relative;
   top: -30px;
+}
+
+.movie img {
+  width: 300px;
+  height: 500px;
+}
+
+.movie h3 {
+  color: #fff;
 }

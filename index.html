@@ -6,6 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="./style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -33,42 +35,63 @@
 		</div>
 	</header>
 
-	<main>
+	<main class="main">
 		<!-- Swiper -->
-		<swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
-			space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
-			<swiper-slide>Slide 1</swiper-slide>
-			<swiper-slide>Slide 2</swiper-slide>
-			<swiper-slide>Slide 3</swiper-slide>
-			<swiper-slide>Slide 4</swiper-slide>
-			<swiper-slide>Slide 5</swiper-slide>
-			<swiper-slide>Slide 6</swiper-slide>
-			<swiper-slide>Slide 7</swiper-slide>
-			<swiper-slide>Slide 8</swiper-slide>
-			<swiper-slide>Slide 9</swiper-slide>
-			<div class="autoplay-progress" slot="container-end">
+		<div class="swiper mySwiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Slide 1</div>
+				<div class="swiper-slide">Slide 2</div>
+				<div class="swiper-slide">Slide 3</div>
+				<div class="swiper-slide">Slide 4</div>
+				<div class="swiper-slide">Slide 5</div>
+				<div class="swiper-slide">Slide 6</div>
+				<div class="swiper-slide">Slide 7</div>
+				<div class="swiper-slide">Slide 8</div>
+				<div class="swiper-slide">Slide 9</div>
+			</div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-pagination"></div>
+			<div class="autoplay-progress">
 				<svg viewBox="0 0 48 48">
 					<circle cx="24" cy="24" r="20"></circle>
 				</svg>
 				<span></span>
 			</div>
-		</swiper-container>
+		</div>
+
+
 
 	</main>`
 
 	<!-- Swiper JS -->
-	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<!-- Initialize Swiper -->
 	<script>
 		const progressCircle = document.querySelector(".autoplay-progress svg");
 		const progressContent = document.querySelector(".autoplay-progress span");
-
-		const swiperEl = document.querySelector("swiper-container");
-		swiperEl.addEventListener("autoplaytimeleft", (e) => {
-			const [swiper, time, progress] = e.detail;
-			progressCircle.style.setProperty("--progress", 1 - progress);
-			progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+		var swiper = new Swiper(".mySwiper", {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 2500,
+				disableOnInteraction: false
+			},
+			pagination: {
+				el: ".swiper-pagination",
+				clickable: true
+			},
+			navigation: {
+				nextEl: ".swiper-button-next",
+				prevEl: ".swiper-button-prev"
+			},
+			on: {
+				autoplayTimeLeft(s, time, progress) {
+					progressCircle.style.setProperty("--progress", 1 - progress);
+					progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+				}
+			}
 		});
 	</script>
 </body>

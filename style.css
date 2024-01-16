@@ -69,7 +69,7 @@ header {
 }
 .swiper {
   width: 100%;
-  height: 400px;
+  height: 600px;
 }
 
 .swiper-slide {
@@ -99,7 +99,7 @@ header {
   align-items: center;
   justify-content: center;
   font-weight: bold;
-  color: var(--swiper-theme-color);
+  color: #1d1f;
 }
 
 .autoplay-progress svg {
@@ -111,9 +111,19 @@ header {
   width: 100%;
   height: 100%;
   stroke-width: 4px;
-  stroke: var(--swiper-theme-color);
+  stroke: #1d1f;
   fill: none;
   stroke-dashoffset: calc(125.6 * (1 - var(--progress)));
   stroke-dasharray: 125.6;
   transform: rotate(-90deg);
+}
+
+.swiper-block-bg {
+  background-image: url("https://files.itv.uz/uploads/helper/2023/12/01//66bd676a671453fda1d0d3350bda1ac2-q-1920x750.jpeg");
+  background-color: #cccccc;
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }

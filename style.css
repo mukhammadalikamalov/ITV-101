@@ -173,3 +173,13 @@ header {
   position: relative;
   top: -30px;
 }
+
+.swiper-block-bg-4 {
+  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  top: -30px;
+}

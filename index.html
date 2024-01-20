@@ -4,11 +4,10 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+	<title>Document</title>
 	<link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-	<title>Home | iTV.uz - TV, movies and series in TAS-IX in best quality.</title>
 </head>
 
 <body>
@@ -23,15 +22,14 @@
 					<a href="">Videoclub</a>
 					<a href="">Live</a>
 					<a href="">Radio</a>
-					<a href="">Subscriptions</a>
-
+					<a href="">Subscribtions</a>
 				</div>
 			</div>
 			<div class="right-header">
 				<button class="lang">en</button>
-				<button class="lang">en</i></button>
-				<button class="lang">en</button>
-				<button class="lang">en</button>
+				<button class="lang"><iconify-icon class="icon" icon="majesticons:search-line"></iconify-icon></button>
+				<button class="lang"><iconify-icon class="icon" icon="mdi:bell"></iconify-icon></button>
+				<button class="lang"><iconify-icon class="icon" icon="ion:exit-outline"></iconify-icon></button>
 			</div>
 		</div>
 	</header>
@@ -117,94 +115,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-8">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-9">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-10">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-11">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-12">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-13">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-14">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="swiper-slide">
-					<div class="swiper-block-bg-15">
-						<div class="blog-bg-img">
-							<h1>Jell</h1>
-							<h4>Drama, 2017, 18+, AQSh</h4>
-							<div>
-								<button class="btn-bg">Watch</button>
-							</div>
-						</div>
-					</div>
-				</div>
 			</div>
 
 			<div class="swiper-pagination"></div>
@@ -244,12 +154,13 @@
 			on: {
 				autoplayTimeLeft(s, time, progress) {
 					progressCircle.style.setProperty("--progress", 1 - progress);
-					progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+					// progressContent.textContent = ${Math.ceil(time / 1000)}s;
 				}
 			}
 		});
 	</script>
 	<script src="./script.js"></script>
+	<script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
 </body>
 
 </html>

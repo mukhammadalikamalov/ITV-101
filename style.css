@@ -5,12 +5,12 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #171718;
+  background-color: rgb(0, 0, 0);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 header {
-  background-color: #1D1F1E;
+  background-color: #1d1f1e;
   width: 100%;
   position: fixed;
   z-index: 5;
@@ -19,7 +19,7 @@ header {
 .wrapper-header {
   display: flex;
   justify-content: space-between;
-  max-width: 1480px;
+  max-width: 1200px;
   margin: 0 auto;
   align-items: center;
 }
@@ -47,9 +47,14 @@ header {
   font-weight: 500;
 }
 
+.link a:hover {
+  color: #fff;
+}
+
 .right-header {
   display: flex;
-  gap: 20px;
+  gap: 10px;
+  margin-right: 100px;
 }
 
 .lang {
@@ -63,6 +68,15 @@ header {
   font-size: 20px;
   text-transform: uppercase;
   border-radius: 10px;
+}
+
+.lang:hover {
+  background-color: #52b0380c;
+}
+
+.icon {
+  font-size: 25px;
+  margin-top: 5px;
 }
 
 .main {
@@ -121,7 +135,7 @@ header {
 }
 
 .swiper-block-bg {
-  background-image: url("https: //files.itv.uz/uploads/helper/2024/01/09//85a5858ce7083d494f2b6be0f7d442e6-q-1920x750.jpeg");
+  background-image: url("https://files.itv.uz/uploads/helper/2023/12/01//66bd676a671453fda1d0d3350bda1ac2-q-1920x750.jpeg");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
@@ -147,7 +161,7 @@ header {
 }
 
 .btn-bg {
-  background-color: #52B038;
+  background-color: #52b038;
   width: 200px;
   height: 40px;
   border-radius: 10px;
@@ -157,7 +171,7 @@ header {
 }
 
 .swiper-block-bg-2 {
-  background-image: url("https: //files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
+  background-image: url("https://files.itv.uz/uploads/helper/2023/11/27//7b641db7c21f6894e882d523ffbe66d7-q-1920x750.jpeg");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
@@ -167,7 +181,7 @@ header {
 }
 
 .swiper-block-bg-3 {
-  background-image: url("");
+  background-image: url("https://files.itv.uz/uploads/helper/2023/10/12//b7b17356a6e79028208aa386805d4bba-q-1920x750.jpeg");
   height: 700px;
   background-position: center;
   background-repeat: no-repeat;
@@ -186,133 +200,58 @@ header {
   top: -30px;
 }
 
-.swiper-block-bg-5 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-6 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-7 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-8 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-9 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-10 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-11 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-12 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-13 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-14 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
-}
-
-.swiper-block-bg-5 {
-  background-image: url("https://files.itv.uz/uploads/helper/2024/01/06//4cad3fc6dad0cc28aaad02263b80efc1-q-1920x750.jpeg");
-  height: 700px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  top: -30px;
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
-  display: grid;
+  width: 300px;
+  margin: 1rem;
+  background-color: #000000;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
 .movie img {
-  border-radius: 5%;
-  width: 220px;
-  height: 320px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0px 1px 0px, rgba(255, 255, 255, 0.25) 0px 1px 0px inset;
+  width: 100%;
 }
 
-.movie img:hover {
-  transform: scale(1.1);
-  display: block;
+.movie-info {
+  color: #ffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.2rem;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 0.5px;
 }
 
-.movie h3 {
-  margin-top: 7px;
-  color: #fff;
+.movie-info h3 {
+  margin-top: 0;
+}
+
+.movie-info span {
+  background-color: #dd5757;
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+}
+
+.overview {
+  position: absolute;
+  padding: 2rem;
+  background-color: #fff;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  max-height: 100%;
+  transform: translateY(101%);
+  overflow-y: auto;
+  transition: 0.5s ease-in-out;
+}
+
+.movie:hover .overview {
+  transform: translateY(0%);
 }
